@@ -33,7 +33,7 @@ h1 {
     display: flex;
     color: white;
     justify-content: space-between;
-    width: 80%;
+/*    width: 80%;*/
     margin: auto;
 }
 
@@ -110,33 +110,37 @@ h1 {
 .photo-overlay {
   opacity: 0;
   transition-property: opacity;
-  transition-duration: 0.5s;
+  transition-duration: 0.8s;
 }
 
-.photo-overlay .p {
+.photo-overlay h3 {
     opacity: 0;
     transition-duration: .5s;
-    transition-delay: 1000ms;
+    transition-delay: 0.2s;
+}
+
+.photo-overlay p {
+    opacity: 0;
+    transition-duration: .4s;
+    transition-delay: 400ms;
 }
 
 .photo-overlay:hover {
   opacity: 1;
 }
 
-.photo-overlay:hover .p {
+.photo-overlay:hover p {
   opacity: 1;
+}
+
+.photo-overlay:hover h3 {
+    opacity: 1;
 }
 
 a{
     text-decoration: none;
     color: white;
 }
-
-
-body {
-    color: red!important;
-}
-
 
 
 
