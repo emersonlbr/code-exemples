@@ -1,0 +1,18 @@
+/*
+
+grid container -parent- and grid items -childs-
+collums and rows
+
+
+
+
+*/
+
+
+* {
+	box-sizing: border-box;
+}
+
+h1 {
+	color: red;
+}
