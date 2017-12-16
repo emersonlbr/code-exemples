@@ -14,15 +14,31 @@ a grid item can also be a grid container
 
 .grid {
 	display: grid;
-	max-width: 800px;
+	max-width: 1000px;
 
 	/*you can add percentages ems all that shit - auto*/
-	grid-template-columns: 200px 200px 200px;
-	grid-template-rows: 100px 200px;
+	/*1fr fills the avaliable space - */
+	/*grid-template-columns: 2fr repeat(2, 1fr);*/
+	/*grid-template-columns: 1fr 2fr 1fr;*/
+	/*grid-template-rows: 100px 200px;*/
+	/*grid-template-columns: minmax(200px, 1fr) 1fr 1fr;*/
+
+	/*flexible columns size/*/
+	/*grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));*/
+	grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+	grid-template-rows: 100px 100px;
+
+	/*to control implicit rows / columns*/
+	grid-auto-rows: minmax(150px, auto);
+
+	/*dont really use this*/
+/*	grid-auto-flow: column;
+	grid-auto-columns: 100px;*/
+
 	/*grid-column-gap: 20px;
 	grid-row-gap: 15px;
-*/
-	grid-gap: 15px 20px;
+	*/
+	grid-gap: 15px;
 }
 
 .item {
